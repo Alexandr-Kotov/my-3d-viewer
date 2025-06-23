@@ -6,7 +6,7 @@ let scene, camera, renderer, controls;
 let currentModel = null;
 
 init();
-loadModel('./public/model1.glb');
+loadModel('./models/model1.glb');
 
 function init() {
   scene = new THREE.Scene();
@@ -84,6 +84,6 @@ function animate() {
 }
 
 // Кнопки выбора моделей
-document.getElementById('btn1').addEventListener('click', () => loadModel('./public/model1.glb'));
-document.getElementById('btn2').addEventListener('click', () => loadModel('./public/model2.glb'));
-document.getElementById('btn3').addEventListener('click', () => loadModel('./public/model3.glb'));
+document.getElementById('btn1').addEventListener('click', () => loadModel('./models/model1.glb'));
+document.getElementById('btn2').addEventListener('click', () => loadModel('./models/model2.glb'));
+document.getElementById('btn3').addEventListener('click', () => loadModel('./models/model3.glb'));
